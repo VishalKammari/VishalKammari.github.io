@@ -657,3 +657,21 @@ div header ul li a:hover{
   color: #727fde;
   font-size: 1.1rem;
 }
+
+/* Mobile-first responsive fix */
+@media (max-width: 600px) {
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 200px 10px;
+  }
+
+  .skill-card {
+    flex: 1 1 45%;  /* allows 2 cards per row */
+    max-width: 25%;
+    min-width: 20px; /* prevents shrinking too much */
+    margin-bottom: 10px;
+  }
+}
